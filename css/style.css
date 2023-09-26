@@ -15,23 +15,44 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+/* ***********UTILITIES************* */
 .debug{
-    border: 1px solid blue;
+    border: 1px solid white;
 }
+/* ************MAIN**************** */
 .wrapper{
     width: 100%;
     height: 100vh;
 }
-.footer-fixed{
-    height: 100px;
-}
-.main{
+main{
     height: calc(100% - 100px);
+    width: 100%;;
+    display: flex;
 }
-.sidebar{
+.small-header{
+    height: 100px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    z-index: 10;
+}
+.side-bar{
     width: 250px;
     height: 100%;
+    background-color: var(--color-black);
 }
-main{
+.main-content{
+    height: 100%;
     width: calc(100% - 250px);
+    background-color: var(--color-dark-color);
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
+.player-bar{
+    height: 100px;
+    width: 100%;
+    background-color:var(--color-dark-grey);
+    position: fixed;
+    bottom: 0;
 }

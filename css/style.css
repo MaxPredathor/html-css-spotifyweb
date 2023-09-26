@@ -11,13 +11,43 @@
 	--color-grey: #717171;
 	--color-light-grey: #c1c1c1;
 	--color-highlight: #adff2f;
+    --color-gradient: linear-gradient(180deg, #575050 0%, rgba(16, 13, 13, 0.00) 100%);
 }
 body{
     font-family: 'Montserrat', sans-serif;
+    color: var(--color-white);
 }
 /* ***********UTILITIES************* */
 .debug{
     border: 1px solid white;
+}
+.px-10{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.py-10{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.px-20{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.py-20{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.mbot-20{
+    margin-bottom: 20px;
+}
+.text-lightgrey{
+    color: var(--color-light-grey);
+}
+.weight-400{
+    font-weight: 400;
+}
+.weight-600{
+    font-weight: 600;
 }
 /* ************MAIN**************** */
 .wrapper{
@@ -29,10 +59,13 @@ main{
     width: 100%;;
     display: flex;
 }
+ul{
+    list-style: none;
+}
 .small-header{
     height: 100px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
     z-index: 10;
 }
@@ -40,11 +73,48 @@ main{
     width: 250px;
     height: 100%;
     background-color: var(--color-black);
+    z-index: 11;
+}
+.top-sidebar{
+    width: 100%;
+}
+.option-container{
+    width: 100%;
+    border-left: 3px solid var(--color-highlight);
+}
+.logo{
+    width: 75%;
+}
+.icon-size{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-left: 20px;
+}
+.icon-text{
+    display: inline-block;
+    font-size: 1rem;
+    position: relative;
+    bottom: 8px;
+    left: 8px;
+}
+.plus-text{
+    bottom: 5px;
+    font-size: 1.2rem;
+}
+.plus{
+    background-color: var(--color-light-grey);
+    color: var(--color-black);
+    font-size: 25px;
+    padding: 7px 9px;
+    margin-left: 20px;
+    display: inline-block;
 }
 .main-content{
     height: 100%;
     width: calc(100% - 250px);
-    background-color: var(--color-dark-color);
+    background: linear-gradient(180deg, #756F6F 0%, #2D2C2C 11.46%, #0D0A0A 100%);
+    overflow-y: auto;
     position: relative;
     bottom: 0;
     right: 0;

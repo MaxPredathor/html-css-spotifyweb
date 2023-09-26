@@ -56,8 +56,14 @@ body{
 .weight-600{
     font-weight: 600;
 }
+.bold{
+    font-weight: bold;
+}
 .font-1-2rem{
     font-size: 1.2rem;
+}
+.font-0-8rem{
+    font-size: 0.8rem;
 }
 .btn{
     border-radius: 1.5rem;
@@ -160,4 +166,27 @@ ul{
     display: inline-block;
     z-index: 13;
     color: white;
+}
+.main-navbar{
+    margin-top: 100px;
+}
+.main-navbar > ul{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.li-hover{
+    position: relative;
+}
+.border{
+    width: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.li-hover:hover .border{
+    border-bottom: 2px solid var(--color-highlight);
 }

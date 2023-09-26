@@ -59,6 +59,10 @@ body{
 .font-1-2rem{
     font-size: 1.2rem;
 }
+.btn{
+    border-radius: 1.5rem;
+    border: 1px solid var(--color-white);
+}
 /* ************MAIN**************** */
 .wrapper{
     width: 100%;
@@ -149,4 +153,11 @@ ul{
     position: fixed;
     bottom: 0;
     z-index: 12;
+}
+.upgrade{
+    margin-left: 85%;
+    margin-top: 30px;
+    display: inline-block;
+    z-index: 13;
+    color: white;
 }

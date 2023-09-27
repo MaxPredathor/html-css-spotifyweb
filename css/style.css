@@ -272,7 +272,7 @@ ul{
 .play-button{
     display: none;
 }
-.play-button > i{
+.play-button > i,a{
     background-color: var(--color-highlight);
     color: var(--color-black);
     font-size: 30px;
@@ -283,6 +283,7 @@ ul{
     transform: translate(-50%, -50%);
     z-index: 5;
     cursor: pointer;
+    text-decoration: none;
 }
 .card:hover .play-button{
     display: block;

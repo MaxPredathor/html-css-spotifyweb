@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="img/icon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Mix</title>
+</head>
+<body>
+    <div class="wrapper">
+        <main>
+            <div class="small-header">
+                <div class="btn upgrade weight-600 px-20 py-10">EFFETTUA L'UPGRADE</div>
+            </div>
+            <aside class="side-bar">
+                <div class="top-sidebar">
+                    <img class="logo py-20 px-20" src="../img/logo.svg" alt="SpotifyLogo">
+                    <div class="option-container py-10">
+                        <img class="icon-size" src="../img/home.svg" alt="Home">
+                        <p class="icon-text text-grey weight-600">Home</p>
+                    </div>
+                    <div class="option-container py-10">
+                        <img class="icon-size" src="../img/search.svg" alt="Cerca">
+                        <p class="icon-text text-grey weight-600">Cerca</p>
+                    </div>
+                    <div class="option-container py-10">
+                        <img class="icon-size" src="../img/libreria.svg" alt="Libreria">
+                        <p class="icon-text text-grey weight-600">La tua libreria</p>
+                    </div>
+                    <h3 class="py-10 px-20">PLAYLIST</h3>
+                    <div class="playlist py-10">
+                        <i class="plus fa-solid fa-plus"></i>
+                        <p class="icon-text plus-text weight-600 text-grey mbot-20 font-1-2rem">Crea Playlist</p>
+                    </div>    
+                    <div class="nome-playlist">
+                        <ul>
+                            <li class="nome py-10 px-20 weight-400 text-grey">Nome Playlist</li>
+                            <li class="nome py-10 px-20 weight-400 text-grey">Nome Playlist</li>
+                            <li class="nome py-10 px-20 weight-400 text-grey">Nome Playlist</li>
+                            <li class="nome py-10 px-20 weight-400 text-grey">Nome Playlist</li>
+                            <li class="nome py-10 px-20 weight-400 text-grey">Nome Playlist</li>
+                            <li class="nome py-10 px-20 weight-400 text-grey">Nome Playlist</li>
+                            <li class="nome py-10 px-20 weight-400 text-grey">Nome Playlist</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom-sidebar">
+                    <div class="border-bottom px-10">
+                        <img class="download" src="../img/download.svg" alt="Download">
+                        <p class="icon-text text-grey weight-600">Installa App</p>
+                    </div>
+                    <div class="py-10 px-10">
+                        <img class="profile" src="../img/profile.svg" alt="Profile">
+                        <p class="icon-text weight-600 font-1-2rem px">Max Gilli</p>
+                    </div>
+                </div>   
+            </aside>
+            <section class="main-content">
+                <nav class="main-navbar">
+                    <ul class="nav-flex">
+                        <li class="li-hover text-grey bold font-0-8rem ptop-20">IN EVIDENZA
+                            <div class="border"></div>
+                        </li>
+                        <li class="li-hover text-grey bold font-0-8rem ptop-20">PODCAST
+                            <div class="border"></div>
+                        </li>
+                        <li class="li-hover text-grey bold font-0-8rem ptop-20">CLASSIFICHE
+                            <div class="border"></div>
+                        </li>
+                        <li class="li-hover text-grey bold font-0-8rem ptop-20">GENERI E MOOD
+                            <div class="border"></div>
+                        </li>
+                        <li class="li-hover text-grey bold font-0-8rem ptop-20">NUOVE USCITE
+                            <div class="border"></div>
+                        </li>
+                        <li class="li-hover text-grey bold font-0-8rem ptop-20">SCOPRI
+                            <div class="border"></div>
+                        </li>
+                    </ul>
+                </nav>
+                <section class="main-section">
+                </section>
+                <section class="main-section">
+                </section>
+                <section class="main-section">
+                </section>
+            </section>
+        </main>
+        <div class="player-bar">
+            <div class="player-bar-left">
+                <img class="px-20 py-10" src="../img/sinister.jpeg" alt="Sinister">
+                <div>
+                    <h5>Sinister</h6>
+                    <p class="font-0-6rem text-grey weight-400">Subtitle</p>
+                </div>
+                <div class="icon-player icon-hover">
+                    <i class="fa-regular fa-heart text-grey"></i>
+                </div>
+                <div class="icon-hover">
+                    <i class="fa-regular fa-folder text-grey"></i>
+                </div>
+            </div>
+            <div class="player-bar-middle">
+                <div class="font-1-2rem playbar-buttons">
+                    <i class="fa-solid fa-shuffle px-10"></i>
+                    <i class="fa-solid fa-backward-step px-10"></i>
+                    <i class="fa-regular fa-circle-play px-20 playbar-play-button"></i>
+                    <i class="fa-solid fa-forward-step px-10"></i>
+                    <i class="fa-solid fa-rotate-right px-10"></i>
+                </div>
+                <div>
+                    <span class="font-0-6rem px-10">0:25</span>
+                    <input type="range" min="1" max="1000" value="200" class="slider" id="playbar">
+                    <span class="font-0-6rem px-10">4:35</span>
+                </div>
+            </div>
+            <div class="player-bar-right">
+                <div class="volume-container font-0-8rem">
+                    <i class="fa-solid fa-bars px-10"></i>
+                    <i class="fa-solid fa-display px-10"></i>
+                    <i class="fa-solid fa-volume-high px-10"></i>
+                    <input type="range" min="1" max="100" value="15" class="slider" id="volume">
+                  </div>
+            </div>
+        </div>
+    </div>     
+</body>
+</html>

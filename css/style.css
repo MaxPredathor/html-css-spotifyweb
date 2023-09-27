@@ -265,9 +265,11 @@ ul{
     font-size: 30px;
     padding: 15px 20px;
     position: absolute;
-    left: 85px;
-    top: 85px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     z-index: 5;
+    cursor: pointer;
 }
 .card:hover .play-button{
     display: block;
@@ -284,7 +286,7 @@ ul{
     display: block;
 }
 .player-bar-left{
-    width: 20%;
+    width: 250px;
     display: flex;
     align-items: center;
 }
@@ -292,10 +294,10 @@ ul{
     width: 100%;
 }
 .player-bar-left > img{
-    width: 25%;
+    width: 40%;
 }
 .icon-player{
-    margin-left: 50px;
+    margin-left: 40px;
     margin-right: 20px;
 }
 .playbar-buttons{
@@ -330,6 +332,9 @@ input[type="range"]::-webkit-slider-thumb {
 input[type="range"]::-webkit-slider-thumb:hover {
     background-color: var(--color-white);
 }
+#playbar:hover {
+    background: var(--color-highlight);
+  }
 @media screen and (max-width: 1200px){
     .card{
         width: calc(100% / 4);

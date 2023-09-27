@@ -319,6 +319,21 @@ ul{
 .playbar-buttons{
     margin-left: 138px;
 }
+.icon-hover:hover .text-grey{
+    color: var(--color-white);
+}
+.playbar-play-button{
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.playbar-play-button:hover{
+    animation: playturn 0.2s  linear;
+}
+@keyframes playturn{
+    0%{
+        transform: rotate(1turn);
+    }
+}
 #playbar{
     height: 4px;
     appearance: none;
@@ -345,12 +360,10 @@ input[type="range"]::-webkit-slider-thumb {
     border-radius: 50%;
     background-color: var(--color-highlight);
 } 
-input[type="range"]::-webkit-slider-thumb:hover {
-    background-color: var(--color-white);
-}
-#playbar:hover {
+#playbar:hover{
     background: var(--color-highlight);
   }
+  /* ***************MEDIA************** */
 @media screen and (max-width: 1200px){
     .card{
         width: calc(100% / 4);

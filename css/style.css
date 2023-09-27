@@ -59,6 +59,9 @@ body{
 .bold{
     font-weight: bold;
 }
+.font-1-4rem{
+    font-size: 1.4rem;
+}
 .font-1-2rem{
     font-size: 1.2rem;
 }
@@ -171,6 +174,9 @@ ul{
     position: fixed;
     bottom: 0;
     z-index: 12;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .upgrade{
     margin-left: 85%;
@@ -224,6 +230,50 @@ ul{
     width: 100%;
     overflow: hidden;
 }
+.player-bar-left{
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
 .card-text{
     width: 100%;
+}
+.player-bar-left > img{
+    width: 25%;
+}
+.icon-player{
+    margin-left: 50px;
+    margin-right: 20px;
+}
+.playbar-buttons{
+    margin-left: 138px;
+}
+#playbar{
+    height: 4px;
+    appearance: none;
+    width: 400px;
+    margin: 2px;
+    border-radius: 8px;
+    transition: 0.2s ease;
+    background-color: var(--color-grey);
+}
+#volume{
+    height: 4px;
+    appearance: none;
+    width: 100px;
+    margin: 2px;
+    border-radius: 8px;
+    transition: 0.2s ease;
+    background-color: var(--color-grey);
+    margin-right: 20px;
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--color-highlight);
+} 
+input[type="range"]::-webkit-slider-thumb:hover {
+    background-color: var(--color-white);
 }

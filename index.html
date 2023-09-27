@@ -185,7 +185,43 @@
                     </section>
                 </section>
             </main>
-            <div class="player-bar"></div>
+            <div class="player-bar">
+                <div class="player-bar-left">
+                    <img class="px-20 py-10" src="img/sinister.jpeg" alt="Sinister">
+                    <div>
+                        <h5>Sinister</h6>
+                        <p class="font-0-6rem text-grey weight-400">Subtitle</p>
+                    </div>
+                    <div class="icon-player">
+                        <i class="fa-regular fa-heart text-grey"></i>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-folder text-grey"></i>
+                    </div>
+                </div>
+                <div class="player-bar-middle">
+                    <div class="font-1-2rem playbar-buttons">
+                        <i class="fa-solid fa-shuffle px-10"></i>
+                        <i class="fa-solid fa-backward-step px-10"></i>
+                        <i class="fa-regular fa-circle-play px-20 font-1-4rem"></i>
+                        <i class="fa-solid fa-forward-step px-10"></i>
+                        <i class="fa-solid fa-rotate-right px-10"></i>
+                    </div>
+                    <div>
+                        <span class="font-0-6rem px-10">0:25</span>
+                        <input type="range" min="1" max="1000" value="200" class="slider" id="playbar">
+                        <span class="font-0-6rem px-10">4:35</span>
+                    </div>
+                </div>
+                <div class="player-bar-right">
+                    <div class="volume-container font-0-8rem">
+                        <i class="fa-solid fa-bars px-10"></i>
+                        <i class="fa-solid fa-display px-10"></i>
+                        <i class="fa-solid fa-volume-high px-10"></i>
+                        <input type="range" min="1" max="100" value="15" class="slider" id="volume">
+                      </div>
+                </div>
+            </div>
         </div>  
     </body>
 </html>

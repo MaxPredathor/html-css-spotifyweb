@@ -91,6 +91,9 @@ body{
 .circle{
     border-radius: 50%;
 }
+.inline-block{
+    display: inline-block;
+}
 /* ************MAIN**************** */
 .wrapper{
     width: 100%;
@@ -279,16 +282,36 @@ ul{
     min-height: 30px;
     display: flex;
     align-items: center;
+    border-bottom: 1px solid var(--color-grey);
+}
+.button-container{
+    width: 100%;
+}
+.play-brani{
+    color: var(--color-black);
+    background-color: var(--color-highlight);
+    font-size: 1.5rem;
+    border-radius: 50%;
+    padding: 15px 20px;
+}
+.icon-mix{
+    font-size: 20px;
 }
 .tbody{
     width: 100%;
     min-height: 80px;
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+.tbody:hover{
+    background-color: var(--color-grey);
+    border-radius: 0.5rem;
 }
 .number{
     width: 5%;
     display: inline-block;
+    padding-left: 20px;
 }
 .title{
     width: 35%;
@@ -441,7 +464,7 @@ ul{
     border-radius: 8px;
     transition: 0.2s ease;
     background-color: var(--color-grey);
-}
+ }
 #volume{
     height: 4px;
     appearance: none;
@@ -451,6 +474,7 @@ ul{
     transition: 0.2s ease;
     background-color: var(--color-grey);
     margin-right: 20px;
+
 }
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -458,10 +482,8 @@ input[type="range"]::-webkit-slider-thumb {
     height: 12px;
     border-radius: 50%;
     background-color: var(--color-highlight);
+
 } 
-#playbar:hover{
-    background: var(--color-highlight);
-  }
   /* ***************MEDIA************** */
 @media screen and (max-width: 1200px){
     .card{
@@ -480,6 +502,9 @@ input[type="range"]::-webkit-slider-thumb {
     .upgrade{
         margin-left: 900px;
     }
+    .title-text{
+        padding-left: 15px;
+    }
 }
 @media screen and (max-width: 992px){
     .card{
@@ -497,6 +522,9 @@ input[type="range"]::-webkit-slider-thumb {
     }
     .upgrade{
         margin-left: 730px;
+    }
+    .title-text{
+        padding-left: 20px;
     }
 }
 @media screen and (max-width: 768px){
@@ -518,6 +546,12 @@ input[type="range"]::-webkit-slider-thumb {
     }
     .upgrade{
         margin-left: 400px;
+    }
+    .number{
+        width: 8%;
+    }
+    .title-text{
+        padding-left: 25px;
     }
 }
 @media screen and (max-width: 576px){
@@ -546,6 +580,24 @@ input[type="range"]::-webkit-slider-thumb {
     }
     .upgrade{
         margin-left: 300px;
+    }
+    .data{
+        display: none;
+    }
+    .durata{
+        width: 10%;
+    }
+    .album{
+        width: 40%;
+        font-size: 0.8rem;
+        padding-top: 3px;
+        padding-left: 10px;
+    }
+    .number{
+        width: 15%;
+    }
+    .title-text{
+        padding-left: 30px;
     }
 }
 @media screen and (max-width: 480px){
